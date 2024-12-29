@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(person_msgs)
+project(mypkg)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -25,6 +25,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+ament_export_dependencies(rosidl_default_runtime)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -37,4 +39,3 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
-
