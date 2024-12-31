@@ -6,13 +6,24 @@ rclpy.init()
 node = Node("coordinate")
 pub = node.create_publisher(Point, "point", 10)
 
+a = 1.0
+b = 1.0
+c = 1.0
+
 
 def cb():
-    msg = Point()
-    msg.x = 1.0
-    msg.y = 1.0
-    msg.z = 1.0
-    pub.publish(msg)
+    global a, b, c
+    coordinate = Point()
+    coordinate.x = a
+    coordinate.y = b
+    coordinate.z = c
+    pub.publish(coordinate)
+    if a < 10.0:
+        a += 1.0
+    elif b < 10.0:
+        b += 1.0
+    elif c < 10.0:
+        c += 1.0
 
 
 def main():
