@@ -7,9 +7,9 @@ rclpy.init()
 node = Node("litener")
 
 
-def cb(msg):
+def cb(coordinate):
     global node
-    node.get_logger().info("(x,y,z): %f,%f,%f" % (msg.x,msg.y,msg.z))
+    node.get_logger().info("(x,y,z): %f,%f,%f" % (coordinate.x,coordinate.y,coordinate.z))
 
 
 def main():
