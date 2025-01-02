@@ -79,6 +79,8 @@ $ ros2 launch mypkg coordinate_listen.launch.py
 ## 必要なソフトウェア
 - Python
   - テスト済みバージョン:3.7~3.10
+- ROS2
+  - 今回使用したディストリビューション:Foxy Fitzroy
 
 ## テスト環境
 - ubuntu-22.04
