@@ -29,8 +29,8 @@ X,Y,Zについての座標をトピックに出します。
 また、送信の間隔は0.5秒です。
 
 - トピックについて
-　- トピック名:`point`
-　- メッセージ型:`Point`（ROS2標準メッセージ型`geometry_msgs.msg.Point`に対応）
+  - トピック名:`point`
+  - メッセージ型:`Point`（ROS2標準メッセージ型`geometry_msgs.msg.Point`に対応）
 
 - 利用方法
 
