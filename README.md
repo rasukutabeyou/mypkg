@@ -1,13 +1,13 @@
 # mypkg
 
-##概要
+## 概要
 2024年度　ロボットシステム学における練習、課題提出用
 主にros2システムの使いかたを学ぶ。
 
 パブリッシャを持つノード`coordinater.py`、サブスクライバを持つノード（テスト用）`listener.py`を持つパッケージとなっている。
 また、`coordinater.py`、`listener.py`に対応するlaunchファイル`coordinate_listen.launch.py`が実装されている。
 
-##ダウンロード、準備
+## ダウンロード、準備
 
 以下の手順に従ってください
 
@@ -18,9 +18,9 @@ $ git clone https://github.com/rasukutabeyou/mypkg.git
 
 ```
 
-##ノードについて
+## ノードについて
 
-###coordinater
+### coordinater
 - 基本動作
 X,Y,Zについての座標をトピックに出します。
 初期値を(x,y,z)=(1,1,1)として送信ごとにx,y,zの順番に1ずつ10の値になるまで加算されます。
@@ -31,6 +31,7 @@ X,Y,Zについての座標をトピックに出します。
 `ros2 run mypkg coordinater`で実行
 
 - 実行例
+
 以下の例はlaunchファイルを`coordinate_listen.launch.py`利用し、`listener.py`を用いてトピックを受け取ったものである。
 
 ```
@@ -56,5 +57,14 @@ $ ros2 launch mypkg coordinate_listen.launch.py
   （略）
 ```
 
-##必要なソフトウェア
+## 必要なソフトウェア
 - Python
+  - テスト済みバージョン:3.7~3.10
+
+## テスト環境
+- ubuntu-22.04
+
+## その他
+ - このソフトウェアは、3条項BSDライセンスの下、再頒布および使用が許可されます。
+
+ - © 2024 Kouta Sakai
