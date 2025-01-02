@@ -16,7 +16,7 @@
 #ワークスペースの用意
 $ mkdir -p ros2_ws/src
 #ディレクトリの移動
-$ cd ros2_ws/src
+$ cd ~/ros2_ws/src
 #リポジトリをクローン
 $ git clone https://github.com/rasukutabeyou/mypkg.git
   （略）
