@@ -1,6 +1,7 @@
 # mypkg
 
 ## 概要
+
 2024年度　ロボットシステム学における練習、課題提出用
 主にros2システムの使いかたを学ぶ。
 
@@ -15,16 +16,21 @@
 #リポジトリをクローン
 $ git clone https://github.com/rasukutabeyou/mypkg.git
   （略）
-
 ```
 
 ## ノードについて
 
 ### coordinater
+
 - 基本動作
+
 X,Y,Zについての座標をトピックに出します。
 初期値を(x,y,z)=(1,1,1)として送信ごとにx,y,zの順番に1ずつ10の値になるまで加算されます。
 また、送信の間隔は0.5秒です。
+
+- トピックについて
+　- トピック名:`point`
+　- メッセージ型:`Point`（ROS2標準メッセージ型`geometry_msgs.msg.Point`に対応）
 
 - 利用方法
 
@@ -32,7 +38,7 @@ X,Y,Zについての座標をトピックに出します。
 
 - 実行例
 
-以下の例はlaunchファイルを`coordinate_listen.launch.py`利用し、`listener.py`を用いてトピックを受け取ったものである。
+以下の例はlaunchファイルを`coordinate_listen.launch.py`利用し、`listener.py`を用いてトピックを受け取ったものです。
 
 ```
 $ ros2 launch mypkg coordinate_listen.launch.py
@@ -67,4 +73,4 @@ $ ros2 launch mypkg coordinate_listen.launch.py
 ## その他
  - このソフトウェアは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 
- - © 2024 Kouta Sakai
+ - © 2025 Kouta Sakai
