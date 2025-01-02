@@ -6,7 +6,7 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 16 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+timeout 16 ros2 launch mypkg coordinate_listen.launch.py > /tmp/mypkg.log
 
 wng () {
          echo warnig${1}
