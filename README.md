@@ -33,6 +33,7 @@ $ source ~/.bashrc
 ## ノードについて
 
 ### coordinater
+![test](https://github.com/rasukutabeyou/mypkg/actions/workflows/test.yml/badge.svg)
 
 - 基本動作
 
