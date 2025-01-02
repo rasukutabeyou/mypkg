@@ -51,7 +51,7 @@ X,Y,Zについての座標をトピックに出します。
 
 - 実行例
 
-以下の例はlaunchファイルを`coordinate_listen.launch.py`利用し、`listener.py`を用いてトピックを受け取ったものです。
+以下の例はlaunchファイル`coordinate_listen.launch.py`を利用し、`listener.py`を用いてトピックを受け取ったものです。
 
 ```
 $ ros2 launch mypkg coordinate_listen.launch.py
