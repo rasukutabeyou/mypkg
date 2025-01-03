@@ -1,39 +1,15 @@
 # mypkg
 
+![test](https://github.com/rasukutabeyou/mypkg/actions/workflows/test.yml/badge.svg)
+
 ## 概要
 
-2024年度　ロボットシステム学における練習、課題提出用
-主にros2システムの使いかたを学ぶ。
-
-パブリッシャを持つノード`coordinater.py`、サブスクライバを持つノード（テスト用）`listener.py`を持つパッケージとなっている。
-また、`coordinater.py`、`listener.py`に対応するlaunchファイル`coordinate_listen.launch.py`が実装されている。
-
-## ダウンロード、ビルド
-
-以下の手順に従ってください
-
-```
-#ワークスペースの用意
-$ mkdir -p ros2_ws/src
-#ディレクトリの移動
-$ cd ~/ros2_ws/src
-#リポジトリをクローン
-$ git clone https://github.com/rasukutabeyou/mypkg.git
-  （略）
-#ビルド
-$ cd ~/ros2_ws
-$ colcon build
-　（略）
-#ソース
-$ source ~/ros2_ws/install/setup.bash #必要に応じて~/.bashrcに書き込んでください
-$ source ~/ros2_ws/install/local_setup.bash #必要に応じて~/.bashrcに書き込んでください
-$ source ~/.bashrc
-```
+ROS2のパッケージ
+パブリッシャ`coordinater.py`を持つ。
 
 ## ノードについて
 
 ### coordinater
-![test](https://github.com/rasukutabeyou/mypkg/actions/workflows/test.yml/badge.svg)
 
 - 基本動作
 
