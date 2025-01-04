@@ -5,7 +5,12 @@
 ## 概要
 
 ROS2のパッケージ
-パブリッシャ`coordinater.py`を持つ。
+
+以下のノードが実装されている。
+  - パブリッシャ:`coordinater.py`
+  - サブスクライバ:`listener.py`
+
+また、`coordinater.py``listener.py` に対応するlaunchファイル`coordinate_listen.launch.py`が実装されている。
 
 ## ノードについて
 
@@ -56,7 +61,8 @@ $ ros2 launch mypkg coordinate_listen.launch.py
 - Python
   - テスト済みバージョン:3.7~3.10
 - ROS2
-  - 今回使用したディストリビューション:Foxy Fitzroy
+  - 開発に使用したディストリビューション:Foxy Fitzroy
+  - テストに使用したディストリビューション:Humble Hawksbill
 
 ## テスト環境
 - ubuntu-22.04
