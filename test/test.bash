@@ -43,6 +43,9 @@ cat /tmp/mypkg.log |
 grep '34.690100,135.195600'
 [ "$?" = 0 ] || wng "神戸"
 cat /tmp/mypkg.log |
+grep '34.385300,132.455300'
+[ "$?" = 0 ] || wng "広島"
+cat /tmp/mypkg.log |
 grep '33.590400,130.401700'
 [ "$?" = 0 ] || wng "福岡"
 
