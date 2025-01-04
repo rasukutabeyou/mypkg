@@ -5,13 +5,11 @@ from geometry_msgs.msg import Point
 
 rclpy.init()
 node = Node("litener")
-n = "name"
 
 
 def cb(coordinate):
     global node
-    #print (n)
-    node.get_logger().info(": %f,%f" % (coordinate.x,coordinate.y))
+    node.get_logger().info("(緯度,経度):%f,%f" % (coordinate.x,coordinate.y))
 
 
 def main():
