@@ -50,6 +50,7 @@ $ ros2 launch mypkg coordinate_listen.launch.py
 ```
 
 - その他
+
 一秒ごとにトピックに出力します。
 
 札幌~福岡が一巡となり、福岡の次は札幌に戻り、座標を出力します。
