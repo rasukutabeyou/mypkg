@@ -34,7 +34,7 @@ def cb(coordinate):
     else:
         name = "error"
 
-    node.get_logger().info("%s:%f,%f" % (name,coordinate.x,coordinate.y))
+    node.get_logger().info("%s:(%f,%f)" % (name,coordinate.x,coordinate.y))
 
 
 def main():
