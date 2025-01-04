@@ -34,6 +34,8 @@ def cb(coordinate):
         name = "広島"
     elif coordinate.x == 33.5904:
         name = "福岡"
+    elif coordinate.x == 0.0:
+        pass
     else:
         name = "error"
 
