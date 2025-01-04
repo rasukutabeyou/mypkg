@@ -6,6 +6,7 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
+echo $ROS_DISTRO
 timeout 16 ros2 launch mypkg coordinate_listen.launch.py > /tmp/mypkg.log
 
 wng () {
