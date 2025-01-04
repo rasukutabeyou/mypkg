@@ -9,6 +9,7 @@ rclpy.init()
 node = Node("coordinate")
 pub = node.create_publisher(Point, "point", 8)
 
+
 a = 0.0
 b = 0.0
 #c = 0.0
