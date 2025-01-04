@@ -10,7 +10,7 @@ ROS2のパッケージ
   - パブリッシャ:`coordinater.py`
   - サブスクライバ:`listener.py`
 
-また、`coordinater.py``listener.py` に対応するlaunchファイル`coordinate_listen.launch.py`が実装されている。
+また、`coordinater.py`、`listener.py` に対応するlaunchファイル`coordinate_listen.launch.py`が実装されている。
 
 ## ノードについて
 
